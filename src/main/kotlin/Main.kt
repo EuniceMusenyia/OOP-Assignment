@@ -1,5 +1,5 @@
 fun main() {
-    var human1 =Human("eunice", 23, 49)
+    var human1 = Human("eunice", 23, 49)
     human1.eating(2)
     human1.speak("I am doing Kotlin assignment")
     human1.birthday()
@@ -11,7 +11,7 @@ fun main() {
 
 }
 class Human(var name: String, var age: Int, var weight: Int){
-    fun eating(foodweight: Int) {
+    fun eating (foodweight: Int) {
         println("I am eating ${foodweight}kgs of food")
       weight+= foodweight
         println(weight)
@@ -20,7 +20,7 @@ class Human(var name: String, var age: Int, var weight: Int){
         println(speech)
     }
     fun birthday(){
-       ++age
+       age = ++age
         println(age)
     }
 }
